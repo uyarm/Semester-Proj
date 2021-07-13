@@ -35,21 +35,19 @@ namespace Semester_Proj
         }
     }
     class MyWindow : Form1{
-        // private System.Windows.Forms.Label label1;
-        // private System.Windows.Forms.ToolStrip toolStrip1;
-        // private System.Windows.Forms.Button button1;
         
         Pen pen = new Pen(Color.Black, 5);
         const int SQUARE = 100, MARGIN = 50;
+        public static int month_number = 0;
         public MyWindow() {
             Text = "CalTest";
-            ClientSize = new Size(1000, 700);
+            ClientSize = new Size(900, 700);
             BackColor = Color.White;
             StartPosition = FormStartPosition.CenterScreen;
             button1.Click += button1_Click;
             //textBox1.Text += textBox1_KeyDown;
             //button1.Click += new EventHandler(button1_Click);
-            //textBox1.Text += new EventHandler(textBox1_KeyDown);
+            textBox1.Text += new EventHandler(textBox1_KeyDown);
             //Popup.textBox1.Text +=
         }
         Point map(int x, int y) =>
@@ -75,11 +73,6 @@ namespace Semester_Proj
             Console.WriteLine($"user clicked square {x}, {y}");
             Console.WriteLine("hey");
             
-            // PopupForm popup = new PopupForm();
-            // DialogResult dialogresult = popup.ShowDialog();
-            //var formPopup = new Popup();
-            //formPopup.Show(this); // if you need non-modal window
-            
         }
         private void button1_Click(object sender, EventArgs e) // try in from1
         {   
@@ -87,10 +80,10 @@ namespace Semester_Proj
                 formPopup.Show(this);
                 Console.WriteLine("hey");
         }
-        // public void textBox1_KeyDown(object sender, KeyEventArgs e){
-        //     string var;
-        //     var = textBox1.Text;
-        // }
+        public void textBox1_KeyDown(object sender, KeyEventArgs e){
+            string var;
+            var = textBox1.Text;
+        }
         // public void label1_Click(object sender, EventArgs e)
         // {
         //     var formPopup = new Popup();

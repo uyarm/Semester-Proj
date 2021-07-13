@@ -46,7 +46,7 @@
             // 
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1000, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(900, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -82,7 +82,7 @@
             this.Month.AutoSize = true;
             this.Month.CausesValidation = false;
             this.Month.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Month.Location = new System.Drawing.Point(406, 25);
+            this.Month.Location = new System.Drawing.Point(350, 25);
             this.Month.Name = "Month";
             this.Month.Size = new System.Drawing.Size(115, 45);
             this.Month.TabIndex = 4;
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.ClientSize = new System.Drawing.Size(900, 700);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
